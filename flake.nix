@@ -14,7 +14,7 @@
             lib = nixpkgs.lib;
         in {
             nixosConfigurations = {
-                jls_desktop = lib.nixosSystem {
+                jls-desktop = lib.nixosSystem {
                     system = "x86_64-linux";
                     modules = [ ./configuration.nix ];
                 };
