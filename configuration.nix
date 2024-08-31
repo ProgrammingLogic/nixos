@@ -126,6 +126,7 @@
           steam
           spotify
           gamemode 
+          lutris
 
           # Productivity
           obsidian
