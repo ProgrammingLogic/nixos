@@ -4,7 +4,7 @@
     # git repos used in the configuration. nixpkgs, home-manager, stuff like that. 
     inputs = {
         nixpkgs = {
-            url = "github.com/nixos/nixpkgs/nixos-24.05";
+            url = "nixpkgs/nixos-24.05";
         };
     };
 
