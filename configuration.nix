@@ -127,6 +127,7 @@
           spotify
           gamemode 
           lutris
+          r2modman
 
           # Productivity
           obsidian
