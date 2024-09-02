@@ -126,6 +126,7 @@
           steam
           spotify
           gamemode 
+          gamescope
           lutris
           r2modman
 
