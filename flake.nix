@@ -1,5 +1,5 @@
 {
-    description = "Desktop configuration";
+    description = "Jonathyn's NixOS Configuration";
 
     # git repos used in the configuration. nixpkgs, home-manager, stuff like that. 
     inputs = {
@@ -16,7 +16,20 @@
             nixosConfigurations = {
                 jls-desktop = lib.nixosSystem {
                     system = "x86_64-linux";
-                    modules = [ ./configuration.nix ];
+                    
+                    modules = [ 
+                        ./hosts/default/configuration.nix 
+                        ./hosts/jls-desktop/configuration.nix
+                    ];
+                };
+
+                jls-laptop-dellxps13 = lib.nixosSystem {
+                    system = "x86_64-linux";
+
+                    modules = [
+                        ./hosts/default/configuration.nix
+                        ./hosts/jls-laptop-dellxps13/configuration.nix
+                    ];
                 };
             };
         };
