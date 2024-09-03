@@ -15,7 +15,6 @@
     boot.loader.grub.device = "/dev/nvme0n1";
     boot.loader.grub.useOSProber = true;
 
-    networking.hostName = "jls-desktop"; # Define your hostname.
     # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
     # Configure network proxy if necessary
@@ -46,8 +45,6 @@
     # NVIDIA CONFIGURATION
     services = {
         xserver = {
-            videoDrivers = [ "nvidia" ];
-            
             enable = true;
             libinput.enable = true;
         };
@@ -61,19 +58,6 @@
             };
         };
         
-    };
-
-    hardware.opengl = {
-        enable = true;
-    };
-
-    hardware.nvidia = {
-        modesetting.enable = true;
-        powerManagement.enable = false;
-        powerManagement.finegrained = false;
-        open = false;
-        nvidiaSettings = true;
-        package = config.boot.kernelPackages.nvidiaPackages.stable;
     };
 
     # Enable the X11 windowing system.
@@ -117,7 +101,6 @@
         description = "Jonathyn Stiverson";
         extraGroups = [ "networkmanager" "wheel" "power" "gamemode"];
         packages = with pkgs; [
-          kdePackages.kate
           # Security / privacy
           protonvpn-gui
           protonvpn-cli
