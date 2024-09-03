@@ -4,7 +4,11 @@
         ./hardware_configuration.nix
     ];
 
+    # Bootloader.
     boot.loader.grub.device = "/dev/nvme0n1";
+    boot.loader.grub.enable = true;
+    boot.loader.grub.useOSProber = true;
+
     networking.hostName = "jls-desktop";
 
     hardware.opengl = {
