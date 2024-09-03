@@ -27,7 +27,6 @@
                     system = "x86_64-linux";
 
                     modules = [
-                        ./hosts/jls-laptop-dellxps13/hardware_configuration.nix
                         ./hosts/default/configuration.nix
                         ./hosts/jls-laptop-dellxps13/configuration.nix
                     ];
