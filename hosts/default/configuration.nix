@@ -326,6 +326,19 @@
         git
         wget
         curl
+
+        # Gnome applications
+        gnome.gpaste
+        gnome-photos
+        gnome.gnome-tweaks
+        gnome.gnome-clocks
+        gnome.gnome-terminal
+
+        # Gnome extensions
+        gnomeExtensions.trimmer
+
+        # Add for touch-screen laptops
+        # gnomeExtensions.touch-x
     ];
 
     environment.variables = {
