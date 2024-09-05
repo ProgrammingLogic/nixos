@@ -8,6 +8,7 @@
     boot.loader.grub.device = "/dev/nvme0n1";
     boot.loader.grub.enable = true;
     boot.loader.grub.useOSProber = true;
+    boot.kernel.sysctl."vm.max_map_count" = 2097152; # 16 GB
 
     networking.hostName = "jls-desktop";
 
