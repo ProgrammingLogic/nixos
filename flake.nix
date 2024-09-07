@@ -6,10 +6,14 @@
         nixpkgs = {
             url = "nixpkgs/nixos-24.05";
         };
+
+        home-manager = {
+            url = "https://github.com/nix-community/home-manager/archive/release-24.05.tar.gz";
+        };
     };
 
     # where the system is configured.
-    outputs = { self, nixpkgs, ...}: 
+    outputs = { self, nixpkgs, home-manager, ...}: 
         let 
             lib = nixpkgs.lib;
         in {
