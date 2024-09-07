@@ -37,8 +37,11 @@
                 };
             };
 
-            home-maanger-users = {
+            home-manager.users = {
                 jstiverson = { pkgs, ... }: {
+                    imports = [
+                        ./users/default/default.nix
+                    ];
                     home.stateVersion = "24.05";
                 };
             };
