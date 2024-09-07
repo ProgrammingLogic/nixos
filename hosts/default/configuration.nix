@@ -113,6 +113,9 @@
           # Communication
           discord
           signal-desktop
+
+          # System Utilities
+          xclip # Use so terminal can access the clipboard (neovim namely)
         ];
     };
 
