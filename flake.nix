@@ -36,5 +36,11 @@
                     ];
                 };
             };
+
+            home-maanger-users = {
+                jstiverson = { pkgs, ... }: {
+                    home.stateVersion = "24.05";
+                };
+            };
         };
 }
