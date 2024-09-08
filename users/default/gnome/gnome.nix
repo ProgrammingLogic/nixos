@@ -37,6 +37,10 @@
             "org/gnome/nutter" = {
                 edge-tiling = true;
             };
+            
+            "org/gnome/nutter" = {
+                enable-hot-corners = true;
+            };
 
         # Appearance 
             # Dark mode
