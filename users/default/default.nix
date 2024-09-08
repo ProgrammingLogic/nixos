@@ -4,6 +4,7 @@
     };
 
     imports = [
+        ./gnome/gnome.nix
         ./programs/neovim.nix
     ];
 
