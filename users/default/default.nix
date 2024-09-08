@@ -1,5 +1,9 @@
-{ lib, pkgs, osConfig, ... }: {
+{ config, pkgs, ...} : {
+    home = {
+        stateVersion = "23.11";
+    };
+
     home.packages = with pkgs; [
-        minecraft
+        neofetch
     ];
 }
