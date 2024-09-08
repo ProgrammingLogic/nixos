@@ -25,7 +25,7 @@
                 idle-delay = 0;
             };
 
-            "org/gnome/settings-daemon/plugins/power/" = {
+            "org/gnome/settings-daemon/plugins/power" = {
                 # Turn off auto suspend
                 sleep-inactive-ac-type = "nothing";
 
