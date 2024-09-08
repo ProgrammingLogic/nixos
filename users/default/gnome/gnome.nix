@@ -47,7 +47,7 @@
             # Background 
             "org/gnome/desktop/screensaver" = {
                 picture-uri = "file:///home/jstiverson/.local/share/backgrounds/orthodox_background.jpg";
-            picture-uri-dark = "file:///home/jstiverson/.local/share/backgrounds/orthodox_background.jpg"
+            picture-uri-dark = "file:///home/jstiverson/.local/share/backgrounds/orthodox_background.jpg";
             };
 
             "org/gnome/desktop/background" = {
