@@ -112,7 +112,6 @@
 
           # Communication
           vesktop
-          discord
           signal-desktop
 
           # System Utilities
@@ -348,11 +347,6 @@
     environment.variables = {
         EDITOR = "nvim";
     };
-
-    # Discord requires this package to install
-    nixpkgs.config.permittedInsecurePackage = [
-          "electron-25.9.0"
-    ]; # nixpkgs.config.permittedInsecurePackage
 
     # Some programs need SUID wrappers, can be configured further or are
     # started in user sessions.
