@@ -111,6 +111,7 @@
           obsidian
 
           # Communication
+          vesktop
           discord
           signal-desktop
 
