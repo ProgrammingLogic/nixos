@@ -57,6 +57,6 @@
 
     # Set the computer background
     home.file.".local/share/background/orthodox_background.jpg" = {
-        source = "../../../resources/orthodox_background.jpg";
+        source = ../../../resources/orthodox_background.jpg;
     };
 }
