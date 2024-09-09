@@ -8,7 +8,7 @@
         gnome-tweaks
         gnome-terminal
 
-    ]) ++ (pkgs.gnomeExtensions; [
+    ]) ++ (with pkgs.gnomeExtensions; [
         # Gnome extensions
 
     ]);
