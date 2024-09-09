@@ -5,6 +5,7 @@
         enable = true;
     };
 
+    # watch dconf settings with `dconf watch /`
     dconf.settings = {
         # Favorite apps (toolbar on bottom)
             "org/gnome/shell" = {
