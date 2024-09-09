@@ -17,9 +17,9 @@
     environment.gnome.excludePackages = (with pkgs; [
         gnome-photos
         gnome-tour
+        gedit
     ]) ++ (with pkgs.gnome; [
         cheese
-        gedit
         epiphany
         geary
         tali
