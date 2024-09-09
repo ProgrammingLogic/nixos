@@ -35,4 +35,4 @@
         gnome-calendar
         gnome-videos
     ]);
-};
+}
