@@ -8,7 +8,7 @@
         };
 
         home-manager = {
-            url = "https://github.com/nix-community/home-manager/archive/release-24.05.tar.gz";
+            url = "github:nix-community/home-manager/release-24.05";
             inputs.nixpkgs.follows = "nixpkgs";
         };
     };
