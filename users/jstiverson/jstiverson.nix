@@ -1,4 +1,6 @@
 { config, pkgs, ...} : {
-    host.username = "jstiverson";
-    host.homeDirectory = "/home/jstiverson";
+    host = {
+        username = "jstiverson";
+        homeDirectory = "/home/jstiverson";
+    };
 }
