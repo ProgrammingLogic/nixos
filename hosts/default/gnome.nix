@@ -33,6 +33,6 @@
         gnome-clocks
         gnome-maps
         gnome-calendar
-        gnome-totem
+        totem
     ]);
 }
