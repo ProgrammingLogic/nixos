@@ -18,6 +18,15 @@
         let 
             lib = nixpkgs.lib;
         in {
+            nixosModules = {
+                declarativeHome = {
+                    config = {
+                        home-manager.useGlobalPkgs = true;
+                        home-manager.useUserPkgs = true;
+                    };
+                };
+            };
+
             nixosConfigurations = {
                 jls-desktop = lib.nixosSystem {
                     system = "x86_64-linux";
