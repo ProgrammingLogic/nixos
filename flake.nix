@@ -42,7 +42,7 @@
                             home-manager.users.jstiverson = {
                                 imports = [
                                     ./users/default/default.nix
-                                    # ./users/jstiverson/jstiverson.nix
+                                    ./users/jstiverson/jstiverson.nix
                                 ];
                             };
                         }
@@ -55,6 +55,18 @@
                     modules = [
                         ./hosts/default/configuration.nix
                         ./hosts/jls-laptop-dellxps13/configuration.nix
+
+                        home-manager.nixosModules.home-manager {
+                            home-manager.useGlobalPkgs = true;
+                            home-manager.useUserPackages = true;
+                            
+                            home-manager.users.jstiverson = {
+                                imports = [
+                                    ./users/default/default.nix
+                                    ./users/jstiverson/jstiverson.nix
+                                ];
+                            };
+                        }
                     ];
                 };
             };
