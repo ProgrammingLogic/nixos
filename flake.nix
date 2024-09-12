@@ -27,6 +27,7 @@
                 };
 
                 users-jstiverson = ./users/jstiverson;
+                users-default = ./users/default;
             };
 
             nixosConfigurations = {
