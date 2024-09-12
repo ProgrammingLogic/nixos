@@ -22,7 +22,7 @@
                 declarativeHome = {
                     config = {
                         home-manager.useGlobalPkgs = true;
-                        home-manager.useUserPkgs = true;
+                        home-manager.useUserPackages = true;
                     };
                 };
 
