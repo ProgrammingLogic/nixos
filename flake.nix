@@ -25,6 +25,8 @@
                         home-manager.useUserPkgs = true;
                     };
                 };
+
+                users-jstiverson = ./users/jstiverson;
             };
 
             nixosConfigurations = {
@@ -34,39 +36,23 @@
                     modules = [ 
                         ./hosts/default/configuration.nix 
                         ./hosts/jls-desktop/configuration.nix
-
-                        home-manager.nixosModules.home-manager {
-                            home-manager.useGlobalPkgs = true;
-                            home-manager.useUserPackages = true;
-                            
-                            home-manager.users.jstiverson = {
-                                imports = [
-                                    ./users/default/default.nix
-                                    ./users/jstiverson/jstiverson.nix
-                                ];
-                            };
-                        }
                     ];
                 };
 
                 jls-laptop-dellxps13 = lib.nixosSystem {
                     system = "x86_64-linux";
 
-                    modules = [
+                    modules = with self.nixosModules; [ 
+                        # I have no idea what this does
+                        ({ config = { nix.registry.nixpkgs.flake = nixpkgs; }; })
+
+                        home-manager.nixosModules.home-manager
+                        declarativeHome
+                        users-jstiverson
+
                         ./hosts/default/configuration.nix
                         ./hosts/jls-laptop-dellxps13/configuration.nix
 
-                        home-manager.nixosModules.home-manager {
-                            home-manager.useGlobalPkgs = true;
-                            home-manager.useUserPackages = true;
-                            
-                            home-manager.users.jstiverson = {
-                                imports = [
-                                    ./users/default/default.nix
-                                    ./users/jstiverson/jstiverson.nix
-                                ];
-                            };
-                        }
                     ];
                 };
             };
