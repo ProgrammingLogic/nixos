@@ -88,7 +88,6 @@
     # services.xserver.libinput.enable = true;
 
     # Install firefox.
-    programs.firefox.enable = true;
 
     programs.neovim = {
         enable = true;
@@ -259,11 +258,16 @@
         };
     };
 
-    programs.bash = {
-        enableCompletion = true;
-    };
 
-    programs.steam.enable = true;
+    programs = {
+        steam.enable = true;
+        firefox.enable = true;
+        dconf.enable = true;
+
+        bash = {
+            enableCompletion = true;
+        };
+    };
 
     # Allow unfree packages
     nixpkgs.config.allowUnfree = true;
@@ -298,6 +302,9 @@
         git
         wget
         curl
+
+        # Development
+        vscode
     ];
 
     environment.variables = {
