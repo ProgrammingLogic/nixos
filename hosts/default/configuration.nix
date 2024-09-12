@@ -87,35 +87,6 @@
     # Enable touchpad support (enabled default in most desktopManager).
     # services.xserver.libinput.enable = true;
 
-    # Define a user account. Don't forget to set a password with ‘passwd’.
-    users.users.jstiverson = {
-        isNormalUser = true;
-        description = "Jonathyn Stiverson";
-        extraGroups = [ "networkmanager" "wheel" "power" "gamemode"];
-        packages = with pkgs; [
-          # Security / privacy
-          protonvpn-gui
-          protonvpn-cli
-
-          # Entertainment
-          steam
-          spotify
-          gamemode 
-          gamescope
-          lutris
-          r2modman
-
-          # Productivity
-          obsidian
-
-          # Communication
-          vesktop
-          signal-desktop
-
-          # System Utilities
-        ];
-    };
-
     # Install firefox.
     programs.firefox.enable = true;
 
